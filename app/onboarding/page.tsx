@@ -9,6 +9,7 @@ import { OnboardingAction } from "../actions";
 import { useForm } from '@conform-to/react';
 import { onboardingSchema } from "@/lib/zodSchema";
 import { parseWithZod } from "@conform-to/zod";
+import { SubmitButton } from "../components/SubmitButtons";
 
 export default function OnboardingRoute() {
     const [lastResult, action] = useActionState(OnboardingAction, undefined);
@@ -66,7 +67,7 @@ export default function OnboardingRoute() {
                 </div>                    
                 </CardContent>
                 <CardFooter>
-                <Button className="w-full">Submit</Button>
+                    <SubmitButton text="Submit" className="w-full" />
             </CardFooter>
                 </form>
             </Card>
