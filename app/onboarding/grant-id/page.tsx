@@ -20,7 +20,7 @@ export default function OnboardingRouteTwo() {
                 </CardHeader>
                 <CardContent>
                     <Button className="w-full" asChild>
-                        <Link href="/">
+                        <Link href="/api/auth">
                         <CalendarCheck2 size={4} />
                         Connect Calender to Account</Link>
                     </Button>
